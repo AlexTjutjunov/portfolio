@@ -1,0 +1,50 @@
+body {
+    @include poppins(18px, 30px, 600);
+    color: $color-white;
+    background: #212529;
+}
+
+.container {
+    max-width: 1335px;
+    margin: 0 auto;
+}
+
+.inner-subtitle {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    padding: 6px 0;
+    margin-bottom: 8px;
+    width: 148px;
+}
+
+.inner-title {
+    @include roboto(48px, 50px, 700);
+}
+
+.inner-text {
+    font-size: 16px;
+    color: $color-text;
+}
+
+.inner-link {
+    display: block;
+    width: 148px;
+    background: $bg-primary;
+    border-radius: 50px;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: $color-link;
+}
+
+.inner-link:hover {
+    opacity: 0.6;
+    transition: 0.4s ease-in-out;
+}

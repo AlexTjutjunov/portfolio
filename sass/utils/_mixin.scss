@@ -1,0 +1,27 @@
+@mixin poppins($fz, $lh, $fw) {
+    font-family: 'Poppins', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin inter($fz, $lh, $fw) {
+    font-family: 'Inter', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin roboto($fz, $lh, $fw) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin work($fz, $lh, $fw) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}

@@ -1,0 +1,92 @@
+.testimonials {
+    padding-bottom: 253px;
+
+    @media(max-width:1250px){
+        padding: 0 10px 253px;
+    }
+    &-subtitle {
+        margin: 0 auto 8px;
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    &-description {
+        width: 380px;
+        margin: 0 auto;
+        background: $bg-white;
+        border-radius: 8px;
+        padding: 51px 52px 49px 32px;
+
+        @media(max-width:400px){
+            width: 100%;
+            padding: 51px 15px 49px 15px;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        li {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font-size: 0;
+            line-height: 0;
+            background: $bg-secondary;
+
+            &.slick-active {
+                background: $bg-primary;
+            }
+        }
+
+        button {
+            line-height: 0;
+            font-size: 0;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
+
+    &-reiting {
+        display: flex;
+        gap: 9px;
+        margin-bottom: 22px
+    }
+
+    &-comments {
+        color: $color-black;
+        @include poppins(20px, 34px, 400);
+        margin-bottom: 37px;
+    }
+
+    &-work {
+        position: relative;
+        padding-left: 96px;
+    }
+
+    &-img {
+        width: 72px;
+        height: 74px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &-name {
+        @include poppins(20px, 34px, 700);
+        color: $color-black;
+    }
+
+    &-job {
+        @include poppins(16px, 34px, 400);
+        color: $color-black;
+    }
+}

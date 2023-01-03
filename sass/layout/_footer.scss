@@ -1,0 +1,86 @@
+.footer {
+    padding: 149px 0 93px;
+    background: $bg-footer;
+
+    @media (max-width: 1350px){
+        padding: 149px 10px 93px;
+    }
+
+    &-wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &-block {
+        @media(max-width:980px){
+            width: 48%;
+        }
+
+        @media(max-width:768px){
+            width: 100%;
+        }
+    }
+
+    &-logo-link {
+        @include poppins(32px, 32px, 700);
+        color: $color-primary;
+
+        &:hover {
+            color: $color-text;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    &-logo-subtitle {
+        width: 253px;
+        @include work(16px, 32px, 600);
+        color: $color-text;
+        margin: 30px 0 0 0;
+    }
+
+    &-links-title {
+        @include work(21px, 32px, 700);
+    }
+
+    &-links-item {
+        @include work(18px, 36px, 500);
+        color: $color-l;
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            color: $color-primary;
+        }
+    }
+
+    &-media-title {
+        @include work(21px, 32px, 700);
+    }
+
+    &-media-item {
+        @include work(18px, 36px, 500);
+        color: $color-l;
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            color: $color-primary;
+        }
+    }
+
+    &-news-title {
+        @include work(21px, 32px, 700);
+    }
+
+    &-news-link {
+        width: 319px;
+        @include work(18px, 36px, 500);
+        color: $color-l;
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            color: $color-primary;
+        }
+    }
+  
+}
